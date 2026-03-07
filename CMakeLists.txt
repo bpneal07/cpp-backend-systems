@@ -8,3 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(server
     src/main.cpp
 )
+
+
+target_compile_options(server PRIVATE
+    -Wall
+    -Wextra
+    -Wpedantic
+)
