@@ -7,14 +7,16 @@
 
 int main() {
 	std::cout<< "Backend systems project initialized." << std::endl;
-	
+	// Choose a port
 	const int port = 8080; // This is the port the server will listen on
 
+	// Create a socket
 	int server_fd = socket(AF_INET, SOCK_STREAM, 0); // This asks the OS to create a socket
 	 												  // The return value is int server_fd "file descriptor"
 													  // AF_INET: use IPv4 addresses
 													  // SOCK_STREAM: use a stream socket; For internet socket, this means TCP
 													  // 0: use the default protocol for this socket type Linux understands it's TCP
+	// Check if Socket Creation Failed
 	if (server_fd < 0){
 		std::cerr <<"Failed to create socket\n"; // If socket() fails print an error and exit the program
 		return 1;
