@@ -14,8 +14,6 @@ The goal is to slowly build a production-style server while learning:
 ## Non-Goals
 - No frontend
 - No frameworks
-- No game development
-- No rush
 
 ## Current Status
 - Project initialized
