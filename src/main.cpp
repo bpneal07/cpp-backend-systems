@@ -52,6 +52,14 @@ int main() {
 		return 1;
 	}
 
+	std::cout << "Server is listening on port: " << port << '\n';
+	std::cout << "Press Ctrl+C to stop the server.\n";
+	while(true)
+	{
+
+	}
+
+	close(server_fd);
 	return 0;
 
 }
